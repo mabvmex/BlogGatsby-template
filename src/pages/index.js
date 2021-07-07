@@ -1,6 +1,7 @@
 import React from "react"
+import "./index.scss"
 
-export default function index() {
+export default function Home() {
   return (
     <div>
       <h1> ::: HOME ::: </h1>
