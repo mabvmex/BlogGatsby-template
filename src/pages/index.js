@@ -1,13 +1,14 @@
 import React from "react"
 import { Button } from "semantic-ui-react"
+import BlogLayout from "../layouts/BlogLayout"
 
 export default function Home() {
   return (
-    <div>
-      <h1> ::: HOME ::: </h1>
+    <BlogLayout>
+      <h1> Esto es la HOME del Blog </h1>
       <p> ::: esto es un parrafo ::: </p>
       <Button primary>Primary</Button>
       <Button secondary>Secondary</Button>
-    </div>
+    </BlogLayout>
   )
 }
