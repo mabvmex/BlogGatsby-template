@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import SocialMedia from "../SocialMedia/SocialMedia"
 import "./Menu.scss"
 
 export default function Menu() {
@@ -13,7 +14,7 @@ export default function Menu() {
         [Gaming] [Tacos] [Cine] [Software] [Libros] [Código] [Futurología]
         [VR/AR] [Linux] [Hactivismo] [AI] [Mundo Digital] [OS]
       </p>
-      <h5> Social Media</h5>
+      <SocialMedia />
       <h5> Lista de cursos u OTRA COSA</h5>
     </div>
   )
