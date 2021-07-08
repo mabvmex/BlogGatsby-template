@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import SocialMedia from "../SocialMedia/SocialMedia"
+import Courses from "../Courses/Courses"
 import "./Menu.scss"
 
 export default function Menu() {
@@ -16,6 +17,7 @@ export default function Menu() {
       </p>
       <SocialMedia />
       <h5> Lista de cursos u OTRA COSA</h5>
+      <Courses />
     </div>
   )
 }

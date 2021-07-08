@@ -11,7 +11,7 @@ export default function SocialMedia() {
       <h1>::: Social Media:::</h1>
 
       {map(socialData, (social, index) => (
-        <a href={social.link} target="_blank" rel="noreferer noopener">
+        <a href={social.link} target="_blank" rel="noreferrer noopener">
           <Icon circular link name={social.name} className={social.name} />
         </a>
       ))}
