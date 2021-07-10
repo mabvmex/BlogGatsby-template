@@ -1,15 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
+import PostList from "../PostList/PostList"
+import BlogLayout from "../../layouts/BlogLayout"
 
 export default function Blog(props) {
   const { data } = props
   const posts = data.allStrapiPost.nodes
-  console.log(posts)
 
   return (
-    <div>
-      <h1>::: ESTAMOS EN EL BLOG :::</h1>
-    </div>
+    <BlogLayout>
+      <PostList posts={posts} />
+    </BlogLayout>
   )
 }
 
@@ -24,12 +25,11 @@ export const query = graphql`
         id
         title
         content
+        url
         createdAt
-        miniatura {
-          formats {
-            thumbnail {
-              url
-            }
+        miniature {
+          localFile {
+            publicURL
           }
         }
       }

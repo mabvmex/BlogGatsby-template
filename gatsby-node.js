@@ -17,12 +17,11 @@ exports.createPages = async ({ actions, graphql }) => {
           id
           title
           content
+          url
           createdAt
-          miniatura {
-            formats {
-              thumbnail {
-                url
-              }
+          miniature {
+            localFile {
+              publicURL
             }
           }
         }
@@ -33,7 +32,7 @@ exports.createPages = async ({ actions, graphql }) => {
   paginate({
     createPage, // The Gatsby `createPage` function
     items: posts.data.allStrapiPost.nodes, // An array of objects
-    itemsPerPage: 1, // 10, // How many items you want per page
+    itemsPerPage: 10, // 10, // How many items you want per page
     pathPrefix: "/", //"/blog", // Creates pages like `/blog`, `/blog/2`, etc
     component: path.resolve(`src/components/templates/blog.js`), // Just like `createPage()`
   })
