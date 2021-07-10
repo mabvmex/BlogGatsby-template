@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `mabvmex blog`,
-    description: `Internet, tecnología, gadgets, libros, software, apps, web dev, sci-fi, gaming, tacos, cine, software, código, futurología, VR, AR, AI, Linux, hacktivismo, cybersec, ciberseguridad, OS, Mundo y cultura digital y más.`,
+    description: `Internet, tecnología, gadgets, libros, software, apps, web dev, sci-fi, gaming, tacos, cine, software, código, futuro, VR, AR, AI, Linux, hacktivismo, cybersec, ciberseguridad, OS, Mundo y cultura digital y más.`,
     author: `@mabvmex`,
     // siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },

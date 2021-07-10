@@ -1,15 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
-import PostList from "../PostList/PostList"
-import BlogLayout from "../../layouts/BlogLayout"
+import PostList from "../components/PostList/PostList"
+import Pagination from "../components/Pagination"
+import BlogLayout from "../layouts/BlogLayout"
 
 export default function Blog(props) {
-  const { data } = props
+  const { data, pageContext } = props
   const posts = data.allStrapiPost.nodes
 
   return (
     <BlogLayout>
       <PostList posts={posts} />
+      <Pagination pageContext={pageContext} />
     </BlogLayout>
   )
 }
