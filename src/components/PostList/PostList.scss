@@ -5,6 +5,12 @@
   &__item {
     width: 100% !important;
 
+    .extra {
+      i {
+        margin-right: 5px !important;
+      }
+    }
+
     & .ui {
       margin: 5px;
       min-height: 250px;
