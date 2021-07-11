@@ -1,4 +1,6 @@
 import React from "react"
+import BlogLayout from "../../layouts/BlogLayout"
+import TransformOembedToIframe from "../../utils/TransformOembedToIframe"
 import "./post.scss"
 
 export default function Post(props) {
@@ -7,8 +9,15 @@ export default function Post(props) {
 
   console.log(post)
   return (
-    <div>
-      <h1>::: Estamos en la página del post :::</h1>
-    </div>
+    <BlogLayout className="post">
+      <h1>{post.title}</h1>
+      <div className="markdown-body">
+        <div
+          dangerouslySetInnerHTML={{
+            __html: TransformOembedToIframe(post.content),
+          }}
+        />
+      </div>
+    </BlogLayout>
   )
 }
