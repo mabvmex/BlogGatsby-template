@@ -18,6 +18,8 @@ exports.createPages = async ({ actions, graphql }) => {
           title
           content
           url
+          seo_title
+          seo_description
           createdAt
           miniature {
             localFile {
