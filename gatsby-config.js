@@ -22,7 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        // apiURL: `http://localhost:1337`,
+        apiURL: `https://blog-strapi-mabvmex.herokuapp.com/`,
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [`post`],
       },
@@ -30,15 +31,16 @@ module.exports = {
 
     {
       resolve: `gatsby-plugin-manifest`,
-      // options: {
-      //   name: `gatsby-starter-default`,
-      //   short_name: `starter`,
-      //   start_url: `/`,
-      //   background_color: `#663399`,
-      //   theme_color: `#663399`,
-      //   display: `minimal-ui`,
-      // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      // },
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/jpg/Logo-Blue-Icon.png`, // This path is relative to the root of the site.
+      },
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
