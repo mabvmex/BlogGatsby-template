@@ -23,7 +23,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         // apiURL: `http://localhost:1337`,
-        apiURL: `https://blog-strapi-mabvmex.herokuapp.com/`,
+        apiURL: `https://blog-strapi-mabvmex.herokuapp.com`,
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [`post`],
       },
